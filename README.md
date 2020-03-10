@@ -21,7 +21,7 @@ processing steps, class imbalance (positive class \~7%).
 services, procedure types, laboratory test measurements, diagnosis
 description.
 
-Data processing steps are in the [Data wrangling Jupyter notebooks](exploration/data_cleaning).
+Data processing steps are in the [Data wrangling Jupyter notebooks.](exploration/data_cleaning)
 
 **Exploratory data analysis**
 
@@ -36,7 +36,7 @@ admission within a year (Chi square statistic 657, p value E-145).
 
 <img src="reports/readme_figures/1year_readm.png" width="500">
 
-Full exploratory data analysis is available in [EDA Jupyter notebook](exploration/visualization/exploratory_data_analysis.ipynb).
+Full exploratory data analysis is available in [EDA Jupyter notebook.](exploration/visualization/exploratory_data_analysis.ipynb)
 
 **Feature selection (314 features -> 188 features)**
 
@@ -52,7 +52,7 @@ diagnosis word associations is presented below.
 
 <img src="reports/readme_figures/cat_correl.png" width="700">
 
-Feature selection process is detailed in [Feature selection Jupyter notebook](exploration/feature_selection/Feature_selection.ipynb)
+Feature selection process is detailed in [Feature selection Jupyter notebook.](exploration/feature_selection/Feature_selection.ipynb)
 
 **Machine learning**
 
@@ -82,7 +82,7 @@ AUROC.
 
 <img src="reports/readme_figures/Normalized confusion matrix_conf_matrix.png" width="300">
 
-All details and code is available in [Machine learning Jupyter notebooks](models).
+All details and code is available in [Machine learning Jupyter notebooks.](models)
 
 **Coefficient interpretation**
 
@@ -102,4 +102,4 @@ the proposed logistic regression model.
 additional 16%, on top of the HOSPITAL score, hence it is worth
 adopting!**
 
-Model assumptions and parameters are in [Hospital savings model Jupyter notebook](models/Modeling hospital savings.ipynb).
+Model assumptions and parameters are in [Hospital savings model Jupyter notebook.](models/Modeling%20hospital%20savings.ipynb)
