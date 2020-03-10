@@ -1,5 +1,7 @@
 **Predicting 30-day hospital readmissions (MIMIC-III dataset)**
 
+[See full report here](reports/Predicting_readmission_presentation.pptx)
+
 **Goal:** identify patients at high risk of 30-day hospital readmission.
 
 **Background:** Unplanned hospital readmissions result in high costs in
@@ -19,6 +21,8 @@ processing steps, class imbalance (positive class \~7%).
 services, procedure types, laboratory test measurements, diagnosis
 description.
 
+[Data wrangling Jupyter notebooks](exploration/data_cleaning)
+
 **Exploratory data analysis**
 
 Patients in positive and negative readmission groups have different mean
@@ -31,6 +35,8 @@ Patients in positive readmission group are likely to have a prior
 admission within a year (Chi square statistic 657, p value E-145).
 
 <img src="reports/readme_figures/1year_readm.png" width="500">
+
+[EDA Jupyter notebook](exploration/visualization)
 
 **Feature selection (314 features -> 188 features)**
 
@@ -45,6 +51,8 @@ and eliminate redundant features with coefficient \>= 0.9. A plot with
 diagnosis word associations is presented below.
 
 <img src="reports/readme_figures/cat_correl.png" width="700">
+
+[Feature selection Jupyter notebook](exploration/feature_selection)
 
 **Machine learning**
 
@@ -74,6 +82,8 @@ AUROC.
 
 <img src="reports/readme_figures/Normalized confusion matrix_conf_matrix.png" width="300">
 
+[Machine learning Jupyter notebooks](models)
+
 **Coefficient interpretation**
 
 <img src="reports/readme_figures/coefficient_interpretation.png" width="700">
@@ -91,3 +101,5 @@ the proposed logistic regression model.
 **The proposed logistic regression model will save the hospital an
 additional 16%, on top of the HOSPITAL score, hence it is worth
 adopting!**
+
+[Hospital savings model Jupyter notebook](models/Modeling hospital savings.ipynb)
