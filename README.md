@@ -1,6 +1,6 @@
 **Predicting 30-day hospital readmissions (MIMIC-III dataset)**
 
-[See full report here](reports/Predicting_readmission_presentation.pptx)
+[See full report as a PowerPoint presentation here](reports/Predicting_readmission_presentation.pptx)
 
 **Goal:** identify patients at high risk of 30-day hospital readmission.
 
@@ -8,7 +8,7 @@
 unpaid insurance claims and are generally associated with poor patient
 experience and outcome. Hospitals enroll patients at high risk of
 readmission into special Care Management programs. Currently, many
-hospitals use the HOSPITAL score, to flag high-risk patients. Hospital
+hospitals use the HOSPITAL score to flag high-risk patients. Hospital
 score is based on 7 patient characteristics, and is not perfect.
 
 **Approach:** Achieve better predictive performance with machine
@@ -21,7 +21,7 @@ processing steps, class imbalance (positive class \~7%).
 services, procedure types, laboratory test measurements, diagnosis
 description.
 
-[Data wrangling Jupyter notebooks](exploration/data_cleaning)
+Data processing steps are in the [Data wrangling Jupyter notebooks](exploration/data_cleaning).
 
 **Exploratory data analysis**
 
@@ -36,7 +36,7 @@ admission within a year (Chi square statistic 657, p value E-145).
 
 <img src="reports/readme_figures/1year_readm.png" width="500">
 
-[EDA Jupyter notebook](exploration/visualization)
+Full exploratory data analysis is available in [EDA Jupyter notebook](exploration/visualization/exploratory_data_analysis.ipynb).
 
 **Feature selection (314 features -> 188 features)**
 
@@ -52,7 +52,7 @@ diagnosis word associations is presented below.
 
 <img src="reports/readme_figures/cat_correl.png" width="700">
 
-[Feature selection Jupyter notebook](exploration/feature_selection)
+Feature selection process is detailed in [Feature selection Jupyter notebook](exploration/feature_selection/Feature_selection.ipynb)
 
 **Machine learning**
 
@@ -82,7 +82,7 @@ AUROC.
 
 <img src="reports/readme_figures/Normalized confusion matrix_conf_matrix.png" width="300">
 
-[Machine learning Jupyter notebooks](models)
+All details and code is available in [Machine learning Jupyter notebooks](models).
 
 **Coefficient interpretation**
 
@@ -102,4 +102,4 @@ the proposed logistic regression model.
 additional 16%, on top of the HOSPITAL score, hence it is worth
 adopting!**
 
-[Hospital savings model Jupyter notebook](models/Modeling hospital savings.ipynb)
+Model assumptions and parameters are in [Hospital savings model Jupyter notebook](models/Modeling hospital savings.ipynb).
