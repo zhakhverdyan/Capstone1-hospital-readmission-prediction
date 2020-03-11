@@ -1,6 +1,6 @@
 **Predicting 30-day hospital readmissions (MIMIC-III dataset)**
 
-[See full report as a PowerPoint presentation here](reports/Predicting_readmission_presentation.pptx)
+[See full report as a PowerPoint presentation here](reports/Predicting_readmission_presentation.pdf)
 
 **Goal:** identify patients at high risk of 30-day hospital readmission.
 
