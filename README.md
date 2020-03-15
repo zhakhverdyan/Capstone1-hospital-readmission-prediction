@@ -25,6 +25,8 @@ Data processing steps are in the [Data wrangling Jupyter notebooks.](exploration
 
 **Exploratory data analysis**
 
+Full exploratory data analysis is available in [EDA Jupyter notebook.](exploration/visualization/exploratory_data_analysis.ipynb)
+
 Patients in positive and negative readmission groups have different mean
 laboratory test measurements (p value \< E-20, t-test for mean
 difference of 2 independent samples with unequal variance).
@@ -36,9 +38,9 @@ admission within a year (Chi square statistic 657, p value E-145).
 
 <img src="reports/readme_figures/1year_readm.png" width="500">
 
-Full exploratory data analysis is available in [EDA Jupyter notebook.](exploration/visualization/exploratory_data_analysis.ipynb)
-
 **Feature selection (314 features -> 188 features)**
+
+Feature selection process is detailed in [Feature selection Jupyter notebook.](exploration/feature_selection/Feature_selection.ipynb)
 
 Compute Pearson correlation coefficient between numerical variables and
 eliminate redundant features with correlation coefficient \>= 0.9. A
@@ -52,9 +54,9 @@ diagnosis word associations is presented below.
 
 <img src="reports/readme_figures/cat_correl.png" width="700">
 
-Feature selection process is detailed in [Feature selection Jupyter notebook.](exploration/feature_selection/Feature_selection.ipynb)
-
 **Machine learning**
+
+All details and code is available in [Machine learning Jupyter notebooks.](models)
 
 Evaluated performance of select machine learning models on the dataset
 with reduced features.
@@ -82,13 +84,13 @@ AUROC.
 
 <img src="reports/readme_figures/Normalized confusion matrix_conf_matrix.png" width="300">
 
-All details and code is available in [Machine learning Jupyter notebooks.](models)
-
 **Coefficient interpretation**
 
 <img src="reports/readme_figures/coefficient_interpretation.png" width="700">
 
 **Hospital savings analysis**
+
+Model assumptions and parameters are in [Hospital savings model Jupyter notebook.](models/Modeling%20hospital%20savings.ipynb)
 
 To evaluate the predictive model's performance in terms of hospital
 savings I calculated hospital savings for all possible combinations of
@@ -101,5 +103,3 @@ the proposed logistic regression model.
 **The proposed logistic regression model will save the hospital an
 additional 16%, on top of the HOSPITAL score, hence it is worth
 adopting!**
-
-Model assumptions and parameters are in [Hospital savings model Jupyter notebook.](models/Modeling%20hospital%20savings.ipynb)
