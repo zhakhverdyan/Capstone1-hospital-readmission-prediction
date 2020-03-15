@@ -14,6 +14,8 @@ score is based on 7 patient characteristics, and is not perfect.
 **Approach:** Achieve better predictive performance with machine
 learning on a larger set of predictive variables.
 
+**Dataset:** The dataset requires credentialed access on Physionet https://mimic.physionet.org/gettingstarted/access/. For this reason either raw or processed datasets are not stored in this repository. 
+
 **Challenges:** variety of structured and unstructured data, many
 processing steps, class imbalance (positive class \~7%).
 
@@ -28,13 +30,13 @@ Data processing steps are in the [Data wrangling Jupyter notebooks.](exploration
 Full exploratory data analysis is available in [EDA Jupyter notebook.](exploration/visualization/exploratory_data_analysis.ipynb)
 
 Patients in positive and negative readmission groups have different mean
-laboratory test measurements (p value \< E-20, t-test for mean
+laboratory test measurements (P value < 0.01, t-test for mean
 difference of 2 independent samples with unequal variance).
 
 <img src="reports/readme_figures/select_lab_test_sum.png" width="500">
 
 Patients in positive readmission group are likely to have a prior
-admission within a year (Chi square statistic 657, p value E-145).
+admission within a year (Chi square statistic 657, P value < 0.01).
 
 <img src="reports/readme_figures/1year_readm.png" width="500">
 
